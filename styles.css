@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+
+.game-container {
+  width: 75%;
+  margin: 30px auto;
+}
+
+/********Media Queries********/
+@media (min-width: 530px) {
+  .game-container {
+    width: 50%;
+  }
+}
