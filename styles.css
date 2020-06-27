@@ -8,12 +8,14 @@ body {
   font-size: 16px;
   font-family: Verdana, sans-serif;
   background: url("night.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .game-container {
   width: 90%;
-  margin: 5rem auto;
+  margin: 5rem auto 2rem auto;
 }
 
 .game-grid {
@@ -31,12 +33,28 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.6);
 }
 
-.ghost {
-  background: url("ghost.png");
-  background-position: center;
-  background-repeat: no-repeat;
+.checked {
+  background: rgba(30, 140, 155, 0.884);
+  text-align: center;
+  padding-top: 5px;
+  color: yellow;
+  font-weight: bold;
+}
+.result-board {
+  border: 2px solid yellow;
+  color: yellow;
+  font-size: 0.9rem;
+  background: rgb(30, 140, 155);
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 12px 8px;
+  text-align: center;
+  border-radius: 8px;
 }
 
+.result-board span {
+  font-weight: bold;
+}
 /********Media Queries********/
 @media (min-width: 576px) {
   .game-container {
